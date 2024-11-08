@@ -1,6 +1,8 @@
 const mysql = require('mysql2');
 const moment = require('moment-timezone');
 
+dotenv.config();
+
 // Configuración de la conexión a la base de datos
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,

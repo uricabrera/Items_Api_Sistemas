@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const itemRoutes = require('./routes/itemRoutes'); // Importa las rutas
+const dotenv = require('dotenv');
 
 dotenv.config();
 

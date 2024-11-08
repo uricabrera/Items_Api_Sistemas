@@ -5,7 +5,7 @@ const itemRoutes = require('./routes/itemRoutes'); // Importa las rutas
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -15,6 +15,6 @@ app.use(express.json());
 app.use('/', itemRoutes);
 
 // Iniciar el servidor
-app.listen(process.env.PORT, () => {
-    console.log(`Servidor escuchando en http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Servidor escuchando en http://localhost${PORT}`);
 });

@@ -1,5 +1,6 @@
 const mysql = require('mysql2');
 const moment = require('moment-timezone');
+const dotenv = require('dotenv');
 
 dotenv.config();
 

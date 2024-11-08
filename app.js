@@ -15,6 +15,6 @@ app.use(express.json());
 app.use('/', itemRoutes);
 
 // Iniciar el servidor
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${port}`);
 });
